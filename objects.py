@@ -32,7 +32,7 @@ class LocateElements(object):
         self.ff.get("https://anotepad.com/settings")
 
     def element_visibility(self, element):
-        return self.ff.find_element(element).is_displayed()
+        return self.ff.find_element(*element).is_displayed()
 
 
 
